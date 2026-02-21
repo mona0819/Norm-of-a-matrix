@@ -30,7 +30,7 @@ norm_of_matrix="{:.2f}".format(ans)
 print(norm_of_matrix)
 ```
 
-# Infinity Norm of a Matrix
+# 3-Infinity Norm of a Matrix
 ```
 import numpy as np
 mat=np.array(eval(input()))
@@ -48,7 +48,7 @@ print(norm_of_matrix)
 <img width="1250" height="417" alt="image" src="https://github.com/user-attachments/assets/bf25f3f4-7df1-4c0c-911d-f22b3cbfa610" />
 
 
-### Infinity Norm of a Matrix
+### 3-Infinity Norm of a Matrix
 <img width="1231" height="356" alt="image" src="https://github.com/user-attachments/assets/e4a76d8f-7259-4704-a0a9-bd6df0d85ae9" />
 
 ## Result
