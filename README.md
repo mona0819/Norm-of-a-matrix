@@ -5,16 +5,68 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-	1. Get the input matrix using np.array()   
-    2. Find the 2-norm of the matrix using np.linalg.norm()
-	3. Print the norm of the matrix in two decimal places.
+# 1-Norm of a Matrix
+```
+Step 1: Start
+Step 2: Import the NumPy library
+Step 3: Read the matrix input from the user
+Step 4: Convert the input into a NumPy array
+Step 5: Find the absolute values of all elements in the matrix
+Step 6: Compute the sum of absolute values for each column
+Step 7: Find the maximum among these column sums
+     This value is the 1-norm of the matrix
+Step 8: Format the result to 2 decimal places
+Step 9: Display the result
+Step 10: Stop
+```
+# 2-Norm of a Matrix
+```
+Step 1: Start
+Step 2: Import the NumPy library
+Step 3: Read the matrix input from the user
+Step 4: Convert the input into a NumPy array
+Step 5: Compute 
+𝐴
+𝑇
+𝐴
+A
+T
+A (transpose of matrix × matrix)
+Step 6: Find the eigenvalues of 
+𝐴
+𝑇
+𝐴
+A
+T
+A
+Step 7: Select the maximum eigenvalue
+Step 8: Take square root of the maximum eigenvalue
+   This gives the 2-norm (spectral norm)
+Step 9: Format the result to 2 decimal places
+Step 10: Display the result
+Step 11: Stop
+```
+# 3-Infinity Norm of a Matrix
+```
+Step 1: Start
+Step 2: Import the NumPy library
+Step 3: Read the matrix input from the user
+Step 4: Convert the input into a NumPy array
+Step 5: Find the absolute values of all elements in the matrix
+Step 6: Compute the sum of absolute values for each row
+Step 7: Find the maximum among these row sums
+   This value is the Infinity Norm
+Step 8: Format the result to 2 decimal places
+Step 9: Display the result
+Step 10: Stop
+```
 ## Program:
-```Python
+```
 # Register No: 212225230182
 # Developed By: Mohana Priya D
 ```
 # 1-Norm of a Matrix
-```
+```python
 import numpy as np
 mat=np.array(eval(input()))
 ans=np.linalg.norm(mat,1)
@@ -22,7 +74,7 @@ norm_of_matrix="{:.2f}".format(ans)
 print(norm_of_matrix)
 ```
 # 2-Norm of a Matrix
-```
+```python
 import numpy as np
 mat=np.array(eval(input()))
 ans=np.linalg.norm(mat,2)
@@ -31,7 +83,7 @@ print(norm_of_matrix)
 ```
 
 # 3-Infinity Norm of a Matrix
-```
+```python
 import numpy as np
 mat=np.array(eval(input()))
 ans=np.linalg.norm(mat,np.inf)
