@@ -25,8 +25,8 @@ Step 1: Start
 Step 2: Import the NumPy library
 Step 3: Read the matrix input from the user
 Step 4: Convert the input into a NumPy array
-Step 5: Compute A^TA (transpose of matrix × matrix)
-Step 6: Find the eigenvalues of A^TA
+Step 5: Compute A^T A (transpose of matrix × matrix)
+Step 6: Find the eigenvalues of A^T A
 Step 7: Select the maximum eigenvalue
 Step 8: Take square root of the maximum eigenvalue
    This gives the 2-norm (spectral norm)
